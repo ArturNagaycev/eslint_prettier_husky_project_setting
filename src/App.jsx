@@ -3,11 +3,12 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  // const a = 1;
+  const a = 1;
 
-  // if (a == 1) {
-  //   console.log('true');
-  // }
+  if (a === 1) {
+    // eslint-disable-next-line no-console
+    console.log('true');
+  }
 
   return (
     <div className="App">

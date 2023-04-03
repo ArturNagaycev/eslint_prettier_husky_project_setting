@@ -16,6 +16,7 @@
     "eslint": "^8.37.0",
     "eslint-plugin-react": "^7.32.2",
     "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
     "prettier": "2.8.7"
   },
   "scripts": {
@@ -24,9 +25,12 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write . --ignore-path .gitignore",
-    "lint": "eslint . --ignore-path .gitignore --fix",
-    "fix-style": "npm run format && npm run lint",
+    "lint": "eslint . --ignore-path .gitignore",
+    "fix-style": "npm run format && npm run lint -- --fix",
     "prepare": "husky install"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,css}": "npm run lint"
   },
   "eslintConfig": {
     "extends": [
