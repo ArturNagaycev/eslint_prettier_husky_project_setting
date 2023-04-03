@@ -6,7 +6,6 @@ function App() {
   const a = 1;
 
   if (a === 1) {
-    // eslint-disable-next-line no-console
     console.log('true');
   }
 
